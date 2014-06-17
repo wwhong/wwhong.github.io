@@ -10,7 +10,15 @@
 		padding: 0;
 		margin: 0;
 	}
-	.cont_title{width:246px;height:36px;text-align:center;font:400 16px/1.5 Arial,"Lucida Grande",Verdana,"Microsoft YaHei",hei;color:#fff;background:#000 url(images/start.png) no-repeat center center;background-size:239px 8px;}
+	.cont_title{position:relative;width:246px;height:36px;text-align:center;font:400 16px/1.5 Arial,"Lucida Grande",Verdana,"Microsoft YaHei",hei;color:#fff;background:#000 url(images/start.png) no-repeat center center;background-size:239px 8px;}
+	.cont_title:after{position:absolute;top:0;content: "";width:6px;height:46px;
+	background-image: -moz-radial-gradient(#3bc1ef 25%, transparent 40%);
+	background-image: -webkit-radial-gradient(#3bc1ef 25%, transparent 40%);
+	background-image: -o-radial-gradient(#3bc1ef 25%, transparent 40%);
+	background-image: radial-gradient(#3bc1ef 25%, transparent 40%);
+	background-size: 7px 7px;
+	background-position: 0 2px}
+.cont_title:after{right:-3px;}
 
 </style>
 <body>

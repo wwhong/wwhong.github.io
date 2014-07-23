@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>responsive image</title>
 </head>
 <style>
@@ -9,10 +10,14 @@
 		padding: 0;
 		margin: 0;
 	}
+	input{display: block;height: 30px;padding: 0 5px;margin: 0 20px;border: 1px solid #ccc;}
+	.fix_bg::after{content:'';position: fixed;left: 0;top: 0;right: 0;bottom: 0;background-color: #eee;z-index: -1;}
 </style>
 <body>
-	<input type="email" placeholder="email">
-	<input type="tel" placeholder="tel">
-	<input type="search" placeholder="search">
+	<div class="fix_bg">
+		<input type="email" placeholder="email"><br />
+		<input type="tel" placeholder="tel"><br />
+		<input type="search" placeholder="search"><br />
+	</div>
 </body>
 </html>
